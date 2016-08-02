@@ -1,0 +1,25 @@
+<!-- <body ng-app="movies">
+        <div ng-controller="controller as c"> -->
+          <div class="top">
+            <h1> Angular OMDb Search </h1>
+            <label class="entermovie" for="search"> Enter a movie by title
+                <br>
+                <input name="search" ng-model="c.search"/>
+            </label>
+            <button ng-click="c.find(c.search)"> Search </button>
+          </div>
+        <div ng-repeat="each in c.data">
+            <!-- <img class="moviepic" ng-src="{{each.Poster}}"/> -->
+            <div class="moviebox">
+              <!-- ng-click="movieService.findMovie(each.Id)" -->
+              <a href="#/{{each.imdbID}}/show">
+                <h1>
+                  {{each.Title}}
+            </h1>
+                <p>
+                    {{each.Year}}
+                </p>
+            </a>
+          </div>
+        <!-- </div>
+      </div> -->
